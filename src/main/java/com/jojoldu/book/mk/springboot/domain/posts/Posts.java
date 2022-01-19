@@ -1,5 +1,6 @@
 package com.jojoldu.book.mk.springboot.domain.posts;
 
+import com.jojoldu.book.mk.springboot.domain.BaseTimeEntity;
 import javafx.geometry.Pos;
 import lombok.Builder;
 import lombok.Getter;
@@ -11,7 +12,7 @@ import javax.persistence.*;
 @Getter
 @NoArgsConstructor
 @Entity
-public class Posts {
+public class Posts extends BaseTimeEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
